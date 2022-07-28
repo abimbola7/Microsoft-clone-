@@ -1,0 +1,21 @@
+.body{
+    height: 100vh;
+    background-image: linear-gradient(-30deg, #f1d6d6, #ccccec, #f1d6d6);   
+    padding-top: 100px;
+}
+
+.text{
+    outline: none !important;
+}
+
+.card{
+    box-shadow: 3px 3px 5px #5f5d5d, -2px -2px 5px #5f5d5d;
+    /* margin-left: 25%; */
+    width: 450px;
+}
+
+.padd{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
