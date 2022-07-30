@@ -288,7 +288,7 @@ button:focus .button-content{
 }
 
 .accordion-btn{
-    width: 15% !important;
+    width: 25% !important;
     padding: 0px !important;
 }
 
@@ -648,6 +648,8 @@ button:focus .button-content{
 
 .back_img1{
     background-image: url(../images/microsoft_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .button1{
@@ -726,7 +728,11 @@ button:focus .button-content{
     .biglaptop{
         display: inherit;
     }
+    .win11{
+        margin-top: 200px !important;
+    }
 }
+
 
 .absolute2{
     position: absolute;
@@ -783,6 +789,7 @@ button:focus .button-content{
 
 .back_img4{
     background-image: url(../images/mic-back3.jpg);
+    background-repeat: no-repeat;
 }
 
 .back_img5{
@@ -1310,6 +1317,9 @@ accordion-body1{
     .oneNotecontainer1{
         display: inherit;
     }
+    .win11{
+        margin-top: 0px !important;
+    }
 }
 
 
@@ -1524,3 +1534,4 @@ accordion-body1{
         margin-top: 0rem;
     }
 }
+
