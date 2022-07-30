@@ -196,7 +196,7 @@ ul{
     width: 100%;
     height: fit-content;   
     right: 100px;
-    z-index: 5;
+    z-index: 10000;
     background-color: #f2f2f2;
     border: 1px solid #e4e4e4;
     border-bottom: 2px solid black;
@@ -514,36 +514,6 @@ button:focus .button-content{
 .small-header{
     display: none;
 }
-
-@media(max-width:859px){
-    .img_cards .containerss{
-        display: inherit;
-    }
-    .img_card{
-        display: none;
-    }
-    
-    .img_card .imgs{
-        display: none;
-    }
-    
-    .containers{
-        display: none;
-    }
-    .img_cards .imgs{
-        display: inherit;
-    }
-   .head{
-        display: none;
-   }
-   .small-header{
-        display: block;
-    }
-    button:focus .buttonsm-content{
-        display: inherit;
-    }
-}
-
 
 .container_card{
     display: none;
@@ -1460,6 +1430,8 @@ accordion-body1{
     transform: rotate(90deg);;
 }
 
+/* .accordion-button:focus .btn */
+
 .accordion-item{
     border-width: 0px !important;
 }
@@ -1470,4 +1442,79 @@ accordion-body1{
 
 .faq{
     list-style-type: disc;
+}
+
+.accordion-img{
+    width: 100%;
+    position: absolute;
+    height: 70vh;
+    background-color: #0078D4;
+}
+
+.accordion-button{
+    position: static !important;
+}
+
+.btn-cont{
+    display: none;
+}
+
+.accordion-button:focus .btn-cont{
+    display: inherit;
+    animation-name: img;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out; 
+}
+
+@keyframes img{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .9;
+    }
+
+    80%{
+
+        margin-top: -5px;
+    }
+}
+
+.apps2{
+    display: none;
+}
+
+@media(max-width:859px){
+    .img_cards .containerss{
+        display: inherit;
+    }
+    .img_card{
+        display: none;
+    }
+    
+    .img_card .imgs{
+        display: none;
+    }
+    
+    .containers{
+        display: none;
+    }
+    .img_cards .imgs{
+        display: inherit;
+    }
+   .head{
+        display: none;
+   }
+   .small-header{
+        display: block;
+    }
+    button:focus .buttonsm-content{
+        display: inherit;
+    }
+    .apps1{
+        display: none;
+    }
+    .apps2{
+        display: inherit;
+    }
 }
