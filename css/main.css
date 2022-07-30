@@ -446,6 +446,9 @@ button:focus .button-content{
     .edgevideo1{
         height: 850px !important;
     }
+    .margin1{
+        margin-top: 16rem;
+    }
 
 }
 .row2{
@@ -1516,5 +1519,8 @@ accordion-body1{
     }
     .apps2{
         display: inherit;
+    }
+    .margin1{
+        margin-top: 0rem;
     }
 }
