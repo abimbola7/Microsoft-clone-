@@ -3,6 +3,8 @@ body{
     padding-top: 100px;
     padding-bottom: 65px;
     background-repeat: no-repeat;
+    background-size: auto;
+    height:100vh;
 }
 
 .footer{
@@ -62,9 +64,7 @@ input{
     }
 }
 
-@media(max-width:450px){
-    
-}
+
 
 .fa-key{
     transform: rotate(-90deg);
