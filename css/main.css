@@ -769,8 +769,8 @@ button:focus .button-content{
     width: 25%;
     height: 300px;
     /* box-shadow: 0px 3px 4px #C4CFDA; */
-    /* top: 100px; */
-    left: 90px;
+    top: 100px;
+    left: 12%;
     margin-top: 31%;
     animation-name: abs1;
     animation-duration: 5s;
@@ -794,7 +794,7 @@ button:focus .button-content{
     }
     20%{
         visibility: hidden;
-        margin-top: 0px;
+        margin-top: -300px;
     }    
 
 }
