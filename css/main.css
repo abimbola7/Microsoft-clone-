@@ -4,9 +4,9 @@
 }
 
 body{
-    padding: 0px;
-    margin: 0px;
-    overflow-x:hidden;
+    padding: 0px !important;
+    margin: 0px !important;
+    /* overflow-x:hidden; */
     overflow-x: hidden;
     font-family: segoe;
     max-width:100%
@@ -76,7 +76,7 @@ nav{
 .img-background{
     background-image: url(../images/microsoft\ background.jpg);
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size:cover;
     padding-top: 7% !important;
     /* display: none; */
 }
@@ -273,9 +273,21 @@ button:focus .button-content{
     }
 }
 
+.teamslist1-1{
+    display: none !important; 
+}
+
 @media(max-width:1000px){
     .button-content{
         right: 10px;
+    }
+
+    .container.teamslist1{
+        display: none !important;
+    }
+
+    .teamslist1-1{
+        display: grid !important;
     }
 }
 
@@ -716,6 +728,7 @@ button:focus .button-content{
 .biglaptop{
     display: none;
 }
+
 
 @media(max-width:991px){
     .absolute3{
@@ -1255,11 +1268,33 @@ accordion-body1{
     display: none;
 }
 
+.content1-1{
+    display: none;
+}
+
+.container-fluid .zoom3-1{
+    display: none;
+}
+
 @media(max-width:767px){
     /* .col-sm-6{
         margin-left: 0px !important;
         margin-right: 0px;
     } */
+    .container-fluid .zoom3{
+        display: none;
+    }
+
+    .container-fluid .zoom3-1{
+        display: inherit;
+    }
+    .content1{
+        display: none;
+    }
+
+    .content1-1{
+        display: inherit;
+    }
     .text1{
         font-size: 34px !important;
     }
@@ -1366,22 +1401,22 @@ accordion-body1{
 
 .absolute11{
     right: 5%;
-    top: 80px;
+    top: 40px;
 }
 
 .absolute12{
     left: 3%;
-    top: 190px;
+    top: 10%;
 }
 
 .absolute13{
-    right: 5%;
-    top: 190px;
+    right: 1%;
+    top: 30%;
 }
 
 .absolute14{
     left: 3%;
-    top: 190px;
+    top: 20%;
 }
 
 .sub{
@@ -1497,7 +1532,23 @@ accordion-body1{
     display: none;
 }
 
+.btn2.sticky{
+    display: none !important;
+    z-index: 10000;
+}
+
+.btn2-1.sticky{
+    z-index: 10000;
+}
+
+
 @media(max-width:859px){
+    .btn2.sticky{
+        display: flex !important;
+    }
+    .btn2-1.sticky{
+        display: none !important;
+    }
     .img_cards .containerss{
         display: inherit;
     }
@@ -1535,3 +1586,9 @@ accordion-body1{
     }
 }
 
+
+.btn2{
+    display: sticky;
+    top: 90vh;
+    right: 0px;
+}
